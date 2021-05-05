@@ -1,0 +1,43 @@
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--focus-color);
+  text-decoration: none;
+}
+.logo--header {
+  margin-right: 90px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.logo--footer {
+  padding: 10px 0px;
+}
+
+.logo__text {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  transition: color var(--transition-duration) var(--timing-animation);
+}
+
+.logo__text--black {
+  transition: color var(--transition-duration) var(--timing-animation);
+  color: var(--header-logo-color);
+}
+
+.logo__text--white {
+  transition: color var(--transition-duration) var(--timing-animation);
+  color: var(--secondary-header-color);
+}
+
+.logo:focus .logo__text--black,
+.logo:hover .logo__text--black {
+  color: var(--focus-color);
+}
+
+.logo:focus .logo__text--white,
+.logo:hover .logo__text--white {
+  color: var(--focus-color);
+}

@@ -1,0 +1,44 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  .social-links__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--secondary-header-color);
+    transition: background-color var(--transition-duration)
+      var(--timing-animation);
+  }
+
+  .social-links__link--bgc {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .social-links__icon {
+    fill: #afb1b8;
+    transition: fill var(--transition-duration) var(--timing-animation);
+  }
+
+  .social-links__icon--white {
+    fill: var(--secondary-header-color);
+  }
+
+  &__link:focus &__icon,
+  &__link:hover &__icon {
+    fill: var(--secondary-header-color);
+  }
+
+  &__link:focus,
+  &__link:hover {
+    background-color: var(--focus-color);
+  }
+}

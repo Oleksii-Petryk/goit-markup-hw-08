@@ -1,0 +1,16 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--secondary-background-color);
+}
+
+.footer-blocks {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.contacts-block {
+  display: inline-block;
+}

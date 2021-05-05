@@ -1,0 +1,30 @@
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.footer-contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contacts__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+  transition: color var(--transition-duration) var(--timing-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--focus-color);
+  }
+}
+.footer-contacts__link--map {
+  color: var(--secondary-header-color);
+  transition: color var(--transition-duration) var(--timing-animation);
+
+  &:focus,
+  &:hover {
+    color: var(--focus-color);
+  }
+}

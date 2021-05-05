@@ -1,0 +1,28 @@
+.directions-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: calc(-1 * var(--list-items-gaps));
+  margin-top: calc(-1 * var(--list-items-gaps));
+}
+
+.directions-list__item {
+  position: relative;
+  flex-basis: calc(100% / 3 - var(--list-items-gaps));
+  margin-left: var(--list-items-gaps);
+  margin-top: var(--list-items-gaps);
+}
+
+.directions-list__desc {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%);
+
+  padding: 27px 0px;
+  margin: 0px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--secondary-header-color);
+}

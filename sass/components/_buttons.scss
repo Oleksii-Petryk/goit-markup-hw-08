@@ -1,0 +1,82 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+  border-width: 0px;
+  padding: 0px;
+  width: 200px;
+  height: 50px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: var(--button-background-color);
+  color: var(--secondary-header-color);
+  background-color: var(--button-background-color);
+}
+
+.button-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal--button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--secondary-header-color);
+  transition: fill var(--transition-duration) var(--timing-animation);
+}
+
+.modal--button:hover .modal__icon,
+.modal--button:focus .modal__icon {
+  fill: var(--focus-color);
+  cursor: pointer;
+}
+
+.project-filter__button {
+  display: inline-block;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  box-shadow: none;
+  border-radius: 4px;
+  border-width: 0px;
+  border-color: var(--button-background-color);
+  cursor: pointer;
+  color: var(--primary-header-color);
+  background-color: var(--filter-button-background);
+  transition: box-shadow var(--transition-duration) var(--timing-animation),
+    background-color var(--transition-duration) var(--timing-animation),
+    color var(--transition-duration) var(--timing-animation);
+}
+
+.project-filter__button:hover,
+.project-filter__button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: var(--focus-color);
+  color: var(--secondary-header-color);
+}

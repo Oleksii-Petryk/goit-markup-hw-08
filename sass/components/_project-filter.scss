@@ -1,0 +1,10 @@
+.project-filter {
+  display: flex;
+  margin-bottom: var(--header-to-lists-gap);
+  margin-top: 0px;
+  justify-content: center;
+}
+
+.project-filter__item:not(:last-child) {
+  margin-right: 8px;
+}
