@@ -9,6 +9,10 @@
 .social-links-header {
   margin-top: 0px;
   margin-bottom: 20px;
-
+  text-align: center;
   color: var(--secondary-header-color);
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }

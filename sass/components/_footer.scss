@@ -5,12 +5,42 @@
   background-color: var(--secondary-background-color);
 }
 
+.footer-laptop {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
+}
+
 .footer-blocks {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
 }
 
 .contacts-block {
-  display: inline-block;
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
+}
+.contacts-block:nth-child(1) {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 68px;
+  }
 }

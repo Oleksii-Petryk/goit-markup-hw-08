@@ -1,18 +1,27 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-header {
   margin-top: 0px;
-  margin-bottom: var(--header-to-lists-gap);
+  margin-bottom: var(--header-to-lists-gap-mobile);
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-
   color: var(--primary-header-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .title-hidden {

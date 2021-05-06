@@ -7,10 +7,20 @@
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--list-items-gaps));
   margin-top: calc(-1 * var(--list-items-gaps));
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .employee-card {
-  flex-basis: calc(100% / 4 - var(--list-items-gaps));
+  flex-basis: calc(100% / 1 - var(--list-items-gaps));
   margin-left: var(--list-items-gaps);
   margin-top: var(--list-items-gaps);
 
@@ -18,6 +28,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--secondary-header-color);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - var(--list-items-gaps));
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - var(--list-items-gaps));
+  }
 }
 
 .employee-card__profile {
