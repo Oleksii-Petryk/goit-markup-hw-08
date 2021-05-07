@@ -1098,6 +1098,18 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 768px) {
+  .project-card:hover, .project-card:focus {
+    flex-basis: calc(100% / 2 - var(--list-items-gaps));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-card:hover, .project-card:focus {
+    flex-basis: calc(100% / 3 - var(--list-items-gaps));
+  }
+}
+
 .project-card .project-card__content {
   position: relative;
   overflow: hidden;
