@@ -1,5 +1,9 @@
 .features {
-  padding-bottom: 0px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+  }
 }
 
 .feature-list {

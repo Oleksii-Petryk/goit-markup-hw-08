@@ -1,0 +1,21 @@
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--secondary-header-color);
+
+  &.is-open {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

@@ -1,10 +1,23 @@
 .project-filter {
   display: flex;
-  margin-bottom: var(--header-to-lists-gap);
+  flex-wrap: wrap;
   margin-top: 0px;
-  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 25px;
+    justify-content: start;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: var(--list-items-gaps);
+    justify-content: center;
+  }
 }
 
 .project-filter__item:not(:last-child) {
   margin-right: 8px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }

@@ -24,6 +24,10 @@
       position: relative;
       padding-bottom: 28px;
       color: var(--focus-color);
+
+      @media screen and (min-width: 1200px) {
+        padding-bottom: 32px;
+      }
     }
 
     &__link.current::after {

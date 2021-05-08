@@ -64,8 +64,8 @@
   transition: transform var(--transition-duration) var(--timing-animation);
 }
 
-&__link:hover &__overlay,
-&__link:focus &__overlay {
+.project-card__link:hover .project-card__overlay,
+.project-card__link:focus .project-card__overlay {
   transform: translateY(-100%);
 }
 

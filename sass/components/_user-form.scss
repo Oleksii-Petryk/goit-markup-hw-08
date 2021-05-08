@@ -1,16 +1,33 @@
 .user-form {
-  width: 450px;
+  min-width: 100%;
+  min-height: 100%;
+
+  @media screen and (min-width: 480px) {
+    min-width: 370px;
+    min-height: 457px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 450px;
+  }
 
   .user-form__labels {
     display: inline-block;
-    height: 14px;
+    height: 10px;
     margin-bottom: 4px;
 
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.67;
+    font-size: 10px;
+    line-height: 1.5;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 480px) {
+      height: 14px;
+      margin-bottom: 4px;
+
+      font-size: 12px;
+      line-height: 1.67;
+    }
   }
 
   .user-form__input-field {
@@ -18,30 +35,42 @@
 
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 40px;
+    min-width: 100%;
+    height: 30px;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 480px) {
+      height: 40px;
+      margin-bottom: 10px;
+    }
   }
 
   .user-form__input {
     display: inline-block;
-    width: 100%;
-    height: 100%;
-    padding: 12px 42px;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 5px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-duration) var(--timing-animation);
+    @media screen and (min-width: 480px) {
+      padding: 12px 42px;
+    }
   }
 
   .user-form__icon {
     position: absolute;
-    top: 11px;
+    top: 7px;
     left: 12px;
 
     display: block;
 
     fill: var(--primary-header-color);
     transition: fill var(--transition-duration) var(--timing-animation);
+    @media screen and (min-width: 480px) {
+      top: 11px;
+      left: 12px;
+    }
   }
 
   &__input-field:focus-within &__icon {
@@ -77,16 +106,34 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 24px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    justify-content: start;
+    min-height: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 9px;
+    line-height: 1;
+    letter-spacing: 0.01em;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 480px) {
+      min-height: 14px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+      min-height: 24px;
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
+
   .user-form__checkbox {
     position: absolute;
     width: 1px;
@@ -99,9 +146,13 @@
   }
 
   .user-form__icon-check {
-    margin-right: 7px;
+    margin-right: 5px;
     border-radius: 2px;
     fill: var(--primary-header-color);
+
+    @media screen and (min-width: 480px) {
+      margin-right: 7px;
+    }
   }
 
   &__checkbox:checked ~ &__icon-check {
@@ -118,6 +169,21 @@
   }
 
   .user-form__link-agreement {
-    margin-left: 4px;
+    margin-left: 1px;
+    font-size: 9px;
+    line-height: 1;
+    letter-spacing: 0.01em;
+
+    @media screen and (min-width: 480px) {
+      margin-left: 2px;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 }
