@@ -1,0 +1,26 @@
+.mobile-nav {
+  margin-bottom: auto;
+}
+.mobile-nav__item {
+  margin-bottom: 32px;
+}
+
+.mobile-nav__link {
+  color: var(--primary-header-color);
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 320px) {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.18;
+  }
+  @media screen and (min-width: 480px) {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+  }
+}
+.mobile-nav__link.current {
+  color: var(--focus-color);
+}

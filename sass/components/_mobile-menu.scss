@@ -1,15 +1,30 @@
 .mobile-menu {
   display: none;
   position: absolute;
+  z-index: 5;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100vw;
   min-height: 100vh;
+
   background-color: var(--secondary-header-color);
 
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
+    @media screen and (min-width: 480px) {
+      max-height: 796px;
+      padding-left: 40px;
+      padding-right: 15px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
     @media screen and (min-width: 768px) {
       display: none;
     }

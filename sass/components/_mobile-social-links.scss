@@ -1,0 +1,27 @@
+.mobile-social-links {
+  display: flex;
+}
+.mobile-social-links__item:not(:last-child) {
+  height: 22px;
+  padding: 0 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-social-links__item:last-child {
+  padding: 0 10px;
+}
+.mobile-social-links__link {
+  letter-spacing: 0.02em;
+  color: var(--focus-color);
+  font-weight: 500;
+
+  @media screen and (min-width: 320px) {
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 480px) {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
