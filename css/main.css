@@ -489,7 +489,7 @@ img {
   margin-right: auto;
   background-image: var(--linear-gradient), url(../images/adaptive/mobile/hero/header-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top left;
   background-size: cover;
   background-color: var(--secondary-background-color);
 }
@@ -541,10 +541,10 @@ img {
 .hero-title {
   width: 100%;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.62;
   font-weight: 900;
   text-align: center;
@@ -556,6 +556,8 @@ img {
 @media screen and (min-width: 480px) {
   .hero-title {
     max-width: 360px;
+    margin-bottom: 30px;
+    font-size: 26px;
   }
 }
 

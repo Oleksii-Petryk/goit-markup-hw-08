@@ -91,7 +91,7 @@
 </header>
 <main>
     
-    <section class="hero">
+    <section class="section hero">
         <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button data-modal-open class="button  button-center">Заказать услугу</button>
@@ -195,15 +195,42 @@
         <h2 class="directions-title">Чем мы занимаемся</h2>
         <ul class="directions-list list">
             <li class="directions-list__item">
-                <img src="./images/what-do-we-do/img1.jpg" width="370" alt="Разработчик пишуший код на клавиатуре">
+
+            <picture>
+                <source 
+                    srcset="./images/adaptive/desktop/directions/img.jpg 1x, ./images/adaptive/desktop/directions/img@2x.jpg 2x" 
+                    media="(min-width: 1200px)" type="image/jpg">
+
+                <img src="./images/what-do-we-do/img1.jpg" width="370"
+                alt="Разработчик пишуший код на клавиатуре">
+            </picture>    
+                
+
                 <p class="secondary-titles directions-list__desc">Десктопные приложения</p>
             </li>
             <li class="directions-list__item">
-                <img src="./images/what-do-we-do/img2.jpg" width="370" alt="Разработчик работает над созданием мобильного приложения">
+
+                <picture>
+                    <source 
+                        srcset="./images/adaptive/desktop/directions/img-1.jpg 1x, ./images/adaptive/desktop/directions/img@2x-1.jpg 2x" 
+                        media="(min-width: 1200px)" type="image/jpg">
+
+                    <img src="./images/what-do-we-do/img2.jpg" width="370" 
+                    alt="Разработчик работает над созданием мобильного приложения">
+                </picture>
+                
                 <p class="secondary-titles directions-list__desc">Мобильные приложения</p>
             </li>
             <li class="directions-list__item">
-                <img src="./images/what-do-we-do/img3.jpg" width="370" alt="Разработчик выбирает цвет из палитры на экране планшета">
+                <picture>
+                    <source
+                        srcset="./images/adaptive/desktop/directions/img-2.jpg 1x, ./images/adaptive/desktop/directions/img@2x-2.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpg">
+
+                    <img src="./images/what-do-we-do/img3.jpg" width="370" 
+                    alt="Разработчик выбирает цвет из палитры на экране планшета">
+                </picture>
+                
                 <p class="secondary-titles directions-list__desc">Дизайнерские решения</p>
             </li>
         </ul>
@@ -214,7 +241,22 @@
         <h2 class="section-header">Наша команда</h2>
         <ul class="team-list list">
             <li class="employee-card">
-                <img src="./images/team-cards/img1.jpg" width="368" alt="Игорь Демьяненко продукт дизайнер">
+                <picture>
+                    <source
+                        srcset="./images/adaptive/mobile/our-team/img.jpg 1x, ./images/adaptive/mobile/our-team/img@2x.jpg 2x"
+                        media="(max-width: 480px)" type="image/jpg">
+
+                    <source 
+                        srcset="./images/adaptive/tablet/our-team/img.jpg 1x, ./images/adaptive/tablet/our-team/img@2x.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpg"> 
+
+                    <source 
+                        srcset="./images/adaptive/desktop/our-team/img.jpg 1x, ./images/adaptive/desktop/our-team/img@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpg">
+
+                    <img src="./images/team-cards/img1.jpg" width="368" alt="Игорь Демьяненко продукт дизайнер">
+                </picture>
+                
                 <div class="employee-card__profile">
                 <h3 class="employee-card__name">Игорь Демьяненко</h3>
                 <p lang="en" class="employee-card__position">Product Designer</p>
@@ -254,7 +296,23 @@
                 </div>
             </li>
             <li class="employee-card">
-                <img src="./images/team-cards/img2.jpg" width="368" alt="Ольга Репина фронтенд разработчик">
+
+                <picture>
+                    <source 
+                        srcset="./images/adaptive/mobile/our-team/img-1.jpg 1x, ./images/adaptive/mobile/our-team/img@2x-1.jpg 2x"
+                        media="(max-width: 480px)" type="image/jpg">
+                    
+                    <source 
+                        srcset="./images/adaptive/tablet/our-team/img-1.jpg 1x, ./images/adaptive/tablet/our-team/img@2x-1.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpg">
+                    
+                    <source 
+                        srcset="./images/adaptive/desktop/our-team/img-1.jpg 1x, ./images/adaptive/desktop/our-team/img@2x-1.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpg">
+
+                    <img src="./images/team-cards/img2.jpg" width="368" alt="Ольга Репина фронтенд разработчик">    
+                </picture>
+                
                 <div class="employee-card__profile">
                 <h3 class="employee-card__name">Ольга Репина</h3>
                 <p lang="en" class="employee-card__position">Frontend Developer</p>
@@ -291,7 +349,23 @@
                 </div>
             </li>
             <li class="employee-card">
-                <img src="./images/team-cards/img3.jpg" width="368" alt="Николай Тарасов маркетолог">
+
+                <picture>
+                    <source 
+                        srcset="./images/adaptive/mobile/our-team/img-2.jpg 1x, ./images/adaptive/mobile/our-team/img@2x-2.jpg 2x"
+                        media="(max-width: 480px)" type="image/jpg">
+                
+                    <source 
+                        srcset="./images/adaptive/tablet/our-team/img-2.jpg 1x, ./images/adaptive/tablet/our-team/img@2x-2.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpg">
+                
+                    <source
+                        srcset="./images/adaptive/desktop/our-team/img-2.jpg 1x, ./images/adaptive/desktop/our-team/img@2x-2.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpg">
+                
+                    <img src="./images/team-cards/img3.jpg" width="368" alt="Николай Тарасов маркетолог">
+                </picture>
+
                 <div class="employee-card__profile">
                 <h3 class="employee-card__name">Николай Тарасов</h3>
                 <p lang="en" class="employee-card__position">Marketing</p>
@@ -328,7 +402,21 @@
                 </div>
             </li>
             <li class="employee-card">
-                <img src="./images/team-cards/img4.jpg" width="368" alt="Михаил Ермаков дизайнер интерфейса">
+
+                <picture>
+                    <source srcset="./images/adaptive/mobile/our-team/img-3.jpg 1x, ./images/adaptive/mobile/our-team/img@2x-3.jpg 2x"
+                        media="(max-width: 480px)" type="image/jpg">
+                
+                    <source srcset="./images/adaptive/tablet/our-team/img-3.jpg 1x, ./images/adaptive/tablet/our-team/img@2x-3.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpg">
+                
+                    <source
+                        srcset="./images/adaptive/desktop/our-team/img-3.jpg 1x, ./images/adaptive/desktop/our-team/img@2x-3.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpg">
+                
+                    <img src="./images/team-cards/img4.jpg" width="368" alt="Михаил Ермаков дизайнер интерфейса">
+                </picture>
+
                 <div class="employee-card__profile">
                 <h3 class="employee-card__name">Михаил Ермаков</h3>
                 <p lang="en" class="employee-card__position">UI Designer</p>
