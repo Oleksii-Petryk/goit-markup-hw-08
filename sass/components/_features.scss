@@ -52,6 +52,9 @@
   margin-bottom: var(--secondary-headers-gap);
 
   color: var(--primary-header-color);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .feature-list__paragraphs {

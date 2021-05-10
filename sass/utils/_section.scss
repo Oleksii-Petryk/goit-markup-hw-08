@@ -19,6 +19,7 @@
   color: var(--primary-header-color);
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: var(--header-to-lists-gap);
     font-size: 36px;
     line-height: 1.17;
   }

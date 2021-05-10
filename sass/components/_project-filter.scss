@@ -4,13 +4,16 @@
   margin-top: 0px;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     justify-content: start;
   }
 
   @media screen and (min-width: 768px) {
     margin-bottom: var(--list-items-gaps);
     justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: var(--header-to-lists-gap);
   }
 }
 
